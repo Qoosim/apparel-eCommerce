@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styles from './navbar.module.css';
+import { BsCart3 } from 'react-icons/bs';
 
 class Navbar extends Component {
   render() {
     const currency = ['$', '£', '¥', '₽'];
     return (
-      <>
+      <header className={styles.headerContainer}>
         <nav className={styles.navbarList}>
           <div>
             <ul className={styles.leftItems}>
@@ -31,11 +32,14 @@ class Navbar extends Component {
                   }
                 </select>
               </li>
-              <li>cart</li>
+              <li className={styles.cartContainer}>
+                <BsCart3 className={styles.cartIcon} />
+                <span className={styles.cartCounter}>0</span>
+              </li>
             </ul>
           </div>
         </nav>
-      </>
+      </header>
     )
   }
 }

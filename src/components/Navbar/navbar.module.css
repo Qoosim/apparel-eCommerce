@@ -1,14 +1,20 @@
+.headerContainer {
+  width: 100%;
+}
+
 .navbarList {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 5rem;
+  box-shadow: 2px 2px 4px #f3eded;
 }
 
 .leftItems,
 .rightItems {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .leftItems li {
@@ -27,4 +33,28 @@
   background: transparent;
   font-size: 1rem;
   color: #1d1f22;
+}
+
+.cartContainer {
+  cursor: pointer;
+}
+
+.cartIcon {
+  font-size: 1.3rem;
+}
+
+.cartCounter {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: rgb(94, 94, 196);
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  right: 4.3rem;
+  top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
