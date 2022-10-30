@@ -1,5 +1,7 @@
 .headerContainer {
   width: 100%;
+  position: fixed;
+  background: #fff;
 }
 
 .navbarList {
@@ -25,6 +27,11 @@
 
 .rightItems li {
   margin-left: 2rem;
+}
+
+.logo {
+  color: #5ece7b;
+  font-size: 1.5rem;
 }
 
 .currency {

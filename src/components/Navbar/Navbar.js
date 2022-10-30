@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import styles from './navbar.module.css';
 import { BsCart3 } from 'react-icons/bs';
+import { FaShopify } from 'react-icons/fa';
 
 class Navbar extends Component {
   render() {
+
     const currency = ['$', '£', '¥', '₽'];
+
     return (
       <header className={styles.headerContainer}>
         <nav className={styles.navbarList}>
@@ -15,17 +18,17 @@ class Navbar extends Component {
               <li>Kids</li>
             </ul>
           </div>
-          <div>Logo</div>
+          <FaShopify className={styles.logo} />
           <div>
             <ul className={styles.rightItems}>
               <li>
                 <select className={styles.currency}>
                   {
-                    currency.map((curr) => {
+                    currency.map((symbol) => {
                       return (
-                        <option value={curr} key={curr}>
+                        <option value={symbol} key={symbol}>
                           {' '}
-                          {curr}
+                          {symbol}
                         </option>
                       )
                     })

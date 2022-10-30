@@ -1,0 +1,36 @@
+.productCard {
+  width: 24.13rem;
+  height: 27.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.styleImage {
+  width: 22.25rem;
+  height: 21.125rem;
+}
+
+.productInfo {
+  line-height: 1.5rem;
+}
+
+.productDesc {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: #1d1f22;
+  line-height: 160%;
+}
+
+.productPrice {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 160%;
+}
